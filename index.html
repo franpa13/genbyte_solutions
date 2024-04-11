@@ -5,15 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Bootstrap, Landing page, Template, Business, Service">
+    <meta name="keywords" content="Solutions, IT, Developer, Product, Programmers">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
+    <meta name="author" content="GenByteSolutions">
     <title>GenByte It Solutions </title>
-
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/1163985712807419944/1220560955545751552/gnebite_posta.png?ex=6621d7f8&is=660f62f8&hm=ffa0ab564ae5749f712678cae3c34de21220c28132adc986c867d3a83a2c5932&">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/LineIcons.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="css/nivo-lightbox.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
 </head>
 
 <body>
@@ -43,26 +45,38 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#home">Home</a>
+                            <a class="nav-link page-scroll" href="#home" data-key="home">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#services" data-key="about">About</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#features" data-key="service">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#services">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#features">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#showcase">Recent work</a>
+                            <a class="nav-link page-scroll" href="#showcase" data-key="showcase">Recent work</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#team">Team</a>
+                            <a class="nav-link page-scroll" href="#team" data-key="team">Team</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#contact">Contact</a>
+                            <a class="nav-link page-scroll" href="#contact" data-key="contact">Contact</a>
                         </li>
-
+                        <li class="nav-item dropdown language-selector">
+                            <a class="nav-link dropdown-toggle"  id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-key="idioma">
+                                <img src="./img/icons/en.svg" alt="English" /> 🇺🇸
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item"  onclick="event.stopPropagation(); cambiarIdioma('en');">
+                                    <img src="./img/icons/en.svg" alt="English" /> 🇺🇸
+                                </a>
+                                <a class="dropdown-item" onclick="event.stopPropagation(); cambiarIdioma('es');">
+                                    <img src="./img/icons/es.svg" alt="Español" /> 🇪🇸
+                                </a>
+                            </div>
+                          </li>                          
                     </ul>
                 </div>
             </div>
@@ -71,18 +85,18 @@
             <div class="row space-100">
                 <div class="col-lg-6 col-md-12 col-xs-12">
                     <div class="contents">
-                        <h2 class="head-title">BEGIN THE
+                        <h2 class="head-title" data-key="headTitle">BEGIN THE
                             <span class="digital-transform">
-                                DIGITAL TRANSFORMATION
+                              DIGITAL TRANSFORMATION
                             </span>
                             OF YOUR COMPANY TODAY!
-                        </h2>
-                        <p>Start shaping the future of your company today through our expertise in digital
-                            transformation. We guide you towards innovative and strategic technological solutions that
-                            will enhance your competitiveness and prepare you for tomorrow's challenges</p>
+                          </h2>
+                          <p data-key="introParagraph">Start shaping the future of your company today through our expertise in digital transformation. We guide you towards innovative and strategic technological solutions that will enhance your competitiveness and prepare you for tomorrow's challenges</p>
+                          
+                          
                         <div class="header-button">
 
-                            <a href="#contact" class="btn btn-border page-scroll">Contact Us</a>
+                            <a href="#contact" class="btn btn-border page-scroll" data-key="contact">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +120,7 @@
                             <i class="fa-solid fa-bell-concierge"></i>
                         </div>
                         <h4>Genbyte Solutions</h4>
-                        <p>We are proudly dedicated to providing first-class services in software development and
+                        <p data-key="serviceDesc1">We are proudly dedicated to providing first-class services in software development and
                             maintenance.</p>
                     </div>
                 </div>
@@ -117,8 +131,8 @@
                         <div class="icon">
                             <i class="fa-solid fa-people-group"></i>
                         </div>
-                        <h4>Human Capital Provision</h4>
-                        <p>Our service is designed to meet the specialized personnel needs of our clients.</p>
+                        <h4 data-key="serviceTitle2">Human Capital Provision</h4>
+                        <p data-key="serviceDesc2">In our Human Capital presentation, we are committed to meeting the specialized needs of our clients in terms of personnel.</p>
                     </div>
                 </div>
 
@@ -128,8 +142,8 @@
                         <div class="icon">
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
-                        <h4>Our Commitment</h4>
-                        <p>Our highly skilled team strives to provide high-quality service that responds promptly to the
+                        <h4 data-key="serviceTitle3">Our Commitment</h4>
+                        <p data-key="serviceDesc3">Our highly skilled team strives to provide high-quality service that responds promptly to the
                             demands of the current market.</p>
                     </div>
                 </div>
@@ -152,10 +166,10 @@
 
                 <div class="col-lg-6 col-md-12 pl-4">
                     <div class="business-item-info">
-                        <h3>What do we do?</h3>
-                        <p>We turn your ideas into digital solutions. Our highly skilled team is dedicated to creating
+                        <h3 data-key="whatWeDoTitle">What do we do?</h3>
+                        <p data-key="whatWeDoDesc">We turn your ideas into digital solutions. Our highly skilled team is dedicated to creating
                             custom software that drives efficiency, innovation, and growth for your business.</p>
-                        <!-- <a class="btn btn-common" href="#">download</a> -->
+                        
                     </div>
                 </div>
 
@@ -171,11 +185,8 @@
                 <div class="col-lg-12">
                     <div class="features-text section-header text-center">
                         <div>
-                            <h2 class="section-title">Services We Provide</h2>
-                            <div class="desc-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor
-                                    incididunt ut labore et dolore.</p>
-                            </div>
+                            <h2 class="section-title" data-key="servicesProvideTitle" >Services We Provide</h2>
+            
                         </div>
                     </div>
                 </div>
@@ -191,8 +202,8 @@
                             <img src="https://destinyti.com/img/services/software_factory/responsive2.svg" alt="">
                         </div>
                         <div class="feature-info float-left">
-                            <h4>Responsive designs</h4>
-                            <p>Our designs adapt perfectly to different devices <br> and screens, providing a smooth and
+                            <h4 data-key="responsiveDesignsTitle">Responsive designs</h4>
+                            <p data-key="responsiveDesignsDesc">Our designs adapt perfectly to different devices <br> and screens, providing a smooth and
                                 engaging <br> user experience on any platform</p>
                         </div>
                     </div>
@@ -207,8 +218,8 @@
                             <img src="https://destinyti.com/img/services/software_factory/scale.svg" alt="">
                         </div>
                         <div class="feature-info float-left">
-                            <h4>Clean & Scalable Code</h4>
-                            <p>We are committed to maintaining clean <br> and structured code enabling<br> continuous
+                            <h4 data-key="cleanScalableCodeTitle">Clean & Scalable Code</h4>
+                            <p data-key="cleanScalableCodeDesc">We are committed to maintaining clean <br> and structured code enabling<br> continuous
                                 development <br>and easy scalability of your custom software.</p>
                         </div>
                     </div>
@@ -223,8 +234,8 @@
                             <img src="https://destinyti.com/img/services/software_factory/custom.svg" alt="">
                         </div>
                         <div class="feature-info float-left">
-                            <h4>Bespoke Development</h4>
-                            <p>Our personalized approach ensures <br> that eachsolution is built specifically <br> to
+                            <h4 data-key="bespokeDevelopmentTitle">Bespoke Development</h4>
+                            <p data-key="bespokeDevelopmentDesc">Our personalized approach ensures <br> that eachsolution is built specifically <br> to
                                 meet
                                 your needs and goals, <br>delivering precise and effective results.</p>
                         </div>
@@ -240,8 +251,8 @@
                             <img src="https://destinyti.com/img/services/network/eficiencia.svg" alt="">
                         </div>
                         <div class="feature-info float-left">
-                            <h4>Comprehensive Data <br>Protection and Security</h4>
-                            <p>We are committed to protecting your data<br> and that of your clientswith the most<br>
+                            <h4 data-key="dataProtectionSecurityTitle">Comprehensive Data <br>Protection and Security</h4>
+                            <p data-key="dataProtectionSecurityDesc">We are committed to protecting your data<br> and that of your clientswith the most<br>
                                 advanced security measures. <br> With us, you can rest assured that your <br>information
                                 is in good hands,<br> allowing.you to focus on what<br> really matters: growing your
                                 business.</p>
@@ -269,9 +280,9 @@
                 <div class="col-lg-12">
                     <div class="showcase-text section-header text-center">
                         <div>
-                            <h2 class="section-title">Recent Works</h2>
+                            <h2 class="section-title" data-key="recentWorksTitle">Recent Works</h2>
                             <div class="desc-text">
-                                <p>
+                                <p data-key="recentWorksDesc">
                                     Each project represents our commitment to excellence and innovation. Explore our
                                     latest creations and discover how we have helped companies like yours achieve their
                                     online goals.
@@ -706,7 +717,7 @@
                 <div class="col-lg-12">
                     <div class="team-text section-header text-center">
                         <div>
-                            <h2 class="section-title">Team Members</h2>
+                            <h2 class="section-title" data-key="teamMember">Team Members</h2>
 
                         </div>
                     </div>
@@ -796,12 +807,12 @@
                 <div class="col-lg-12">
                     <div class="contact-text section-header text-center">
                         <div>
-                            <h2 class="section-title">Get In Touch</h2>
-                            <div class="desc-text">
-                                <p>
-                                    Get in touch and discover how we can help boost your business.</p>
-
-                            </div>
+                            <h2 class="section-title" data-key="getInTouchTitle">Get In Touch</h2>
+                                <div class="desc-text">
+                                    <p data-key="getInTouchDesc">
+                                    Get in touch and discover how we can help boost your business.
+                                    </p>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -815,41 +826,38 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name"
-                                        required data-error="Please enter your name">
+                                    <input type="text" class="form-control" id="name" name="name" data-key="placeholderName" placeholder="Name" required data-error-key="errorName">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Subject" id="msg_subject" class="form-control"
-                                        name="msg_subject" required data-error="Please enter your subject">
+                                    <input data-key="placeholderSubject" type="text" placeholder="Subject" id="msg_subject" class="form-control"
+                                        name="msg_subject" required data-error-key="errorSubject">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email"
-                                        required data-error="Please enter your Email">
+                                    <input data-key="placeholderEmail" type="text" class="form-control" id="email" name="email" placeholder="Email"
+                                        required data-error-key="errorEmail">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Budget" id="budget" class="form-control"
-                                        name="budget" required data-error="Please enter your Budget">
+                                    <input data-key="placeholderBudget" type="text" placeholder="Budget" id="budget" class="form-control"
+                                        name="budget" required data-error-key="errorBudget">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" name="message"
-                                        placeholder="Write Message" rows="4" data-error="Write your message"
-                                        required></textarea>
+                                    <textarea class="form-control" id="message" name="message" data-key="placeholderWriteMessage" placeholder="Write Message" rows="4" data-error-key="errorMessage" required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="submit-button">
-                                    <button class="btn btn-common" id="submit" type="submit">Submit</button>
+                                    <button class="btn btn-common" id="submit" type="submit" data-key="buttonSubmit">Submit</button>
                                     <div id="msgSubmit" class="h3 hidden"></div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -888,7 +896,7 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                         <div class="footer-logo">
-                            <img src="https://cdn.discordapp.com/attachments/1163985712807419944/1220560955545751552/gnebite_posta.png?ex=660f62f8&is=65fcedf8&hm=0fb8802a229e91cf0465f86145ae34bfbddca1e53df6cbe4eedf79cc098ce6fe&"
+                            <img src="./img/logo.png"
                                 width="45%" alt>
                         </div>
                     </div>
@@ -989,14 +997,18 @@
     <script src="js/nivo-lightbox.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/multilingue.js"></script>
+    <script src="js/contact-form-script.js"></script>
     <script>(function () { if (!document.body) return; var js = "window['__CF$cv$params']={r:'8682765c9ac6741e',t:'MTcxMTA3MTUwOC4wNDcwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
         data-cf-beacon='{"rayId":"8682765c9ac6741e","r":1,"version":"2024.3.0","token":"9a6015d415bb4773a0bff22543062d3b"}'
         crossorigin="anonymous"></script>
+    <script>
+      
+    </script>
 </body>
 
 </html>
