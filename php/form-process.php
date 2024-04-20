@@ -23,7 +23,7 @@ $message = $_POST['message'];
 // Configuración de PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 $mail->IsSMTP(); // Habilitar SMTP
-$mail->SMTPDebug = 1; // No mostrar debugging
+$mail->SMTPDebug = 0; // No mostrar debugging
 $mail->SMTPAuth = true; // Habilitar autenticación SMTP
 $mail->SMTPSecure = 'ssl'; // Habilitar encriptación SSL
 $mail->Host = "smtp.gmail.com";
