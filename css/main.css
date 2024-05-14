@@ -706,6 +706,7 @@ button:focus {
 }
 
 #features .feature-item {
+    height: 100%;
     padding: 30px;
     overflow: hidden;
     -moz-transition: all .8s ease;
@@ -944,6 +945,9 @@ button:focus {
     background: #3ecf8e
 }
 
+    a {
+        cursor: pointer;
+    }
 #showcase .showcase-slider .owl-controls .active span {
     width: 15px;
     height: 15px
@@ -1832,7 +1836,8 @@ button:focus {
 
 /* Estilos para el dropdown */
 .dropdown-menu {
-    background-color: transparent;
+    background: #53f;
+    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;

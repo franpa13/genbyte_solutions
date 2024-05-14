@@ -1,7 +1,7 @@
 <?php
-require("PHPMailer\PHPMailer.php");
-require("PHPMailer\SMTP.php");
-require("PHPMailer\Exception.php");
+require("PHPMailer/PHPMailer.php");
+require("PHPMailer/SMTP.php");
+require("PHPMailer/Exception.php");
 
 // Credentials
 $username = "genbytesolutionscontact@gmail.com";

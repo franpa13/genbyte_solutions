@@ -18,7 +18,7 @@ function submitForm() {
   var message = $("#message").val();
   $.ajax({
     type: "POST",
-    url: "php/form-process.php",
+    url: "api/index.php",
     data:
       "name=" +
       name +

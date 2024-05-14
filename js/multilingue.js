@@ -5,7 +5,7 @@ const traducciones = {
     },
     'about': {
       'en': 'About',
-      'es': 'Acerca de'
+      'es': 'Nosotros'
     },
     'services': {
       'en': 'Services',
@@ -24,8 +24,8 @@ const traducciones = {
       'es': 'Contacto'
     },
     'idioma': {
-        'en': '<img src="./img/icons/en.svg" alt="English" /> 🇺🇸',
-        'es': '<img src="./img/icons/es.svg" alt="Español" /> 🇪🇸'
+        'en': '<img src="./img/icons/en.svg" alt="English" /> en',
+        'es': '<img src="./img/icons/es.svg" alt="Español" /> es'
       },
       'headTitle': {
         'en': 'BEGIN THE <span class="digital-transform">DIGITAL TRANSFORMATION</span> OF YOUR COMPANY TODAY!',
@@ -183,6 +183,37 @@ const traducciones = {
         'en': 'Message Submitted!',
         'es': '¡Mensaje Enviado!'
       },
+        "companyTitle": {
+          "en": "Company",
+          "es": "Empresa"
+        },
+        "aboutUs": {
+          "en": "- About Us",
+          "es": "- Sobre Nosotros"
+        },
+        "contact-footer": {
+          "en": "- Contact",
+          "es": "- Contacto"
+        },
+        "servicesTitle": {
+          "en": "Services",
+          "es": "Servicios"
+        },
+        "itConsulting": {
+          "en": "- IT Consulting",
+          "es": "- Consultoría TI"
+        },
+        "softwareDevelopment": {
+          "en": "- Software Development",
+          "es": "- Desarrollo de Software"
+        },
+        "technicalSupport": {
+          "en": "- Technical Support",
+          "es": "- Soporte Técnico"
+        },
+      
+        
+      
   };
   
   function cambiarIdioma(lang) {
