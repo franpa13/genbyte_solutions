@@ -434,8 +434,9 @@ mark {
   content: "\2014 \00A0";
 }
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 293px;
+ 
+  height: 293px;
 }
 .img-thumbnail {
   padding: 0.25rem;
@@ -8036,6 +8037,7 @@ button.bg-dark:hover {
 }
 .text-center {
   text-align: center !important;
+  
 }
 @media (min-width: 576px) {
   .text-sm-left {
